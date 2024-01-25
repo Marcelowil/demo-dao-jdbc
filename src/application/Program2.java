@@ -26,7 +26,13 @@ public class Program2 {
 			System.out.println(d);
 		}
 		
+		System.out.println("\n=== TEST 3: Deparment findAll ====");
+		Department newDepartment = new Department(null, "Sports");
+		departmentDao.insert(newDepartment);
+		System.out.println("Inserted! New id = " + newDepartment.getId());
+
 		
+
 		sc.close();
 	}
 
